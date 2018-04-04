@@ -66,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
                             String randomTacoName = taconames[randomIndex];
                             nameView3.setText(randomTacoName);
 
-
-
-
                 }
 
     });
