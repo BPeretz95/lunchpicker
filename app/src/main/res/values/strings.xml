@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lunch Picker</string>
+    <string name="thai1">Bangkok Orchid</string>
+    <string name="madness">Teriyaki Madness</string>
+    <string name="sushi">Blue Fin Sushi</string>
+    <string name="pandas">Panda Express</string>
+    <string name="rossj">Ross J Aloha Grill</string>
+    <string name="ramen">Fukimimi Ramen</string>
+    <string name="chinese">China Wan Wan</string>
+    <string name="chickenshack">Chicken Shack</string>
+    <string name="blackbeardiner">Black Bear Diner</string>
+    <string name="innout">In n Out</string>
+    <string name="bbq">Sin City Smokers</string>
+    <string name="marie">Marie Callendars</string>
+    <string name="redrobin">Red Robin</string>
+    <string name="jimmy">Jimmy Johns</string>
+    <string name="capriotis">Cappriotis</string>
+    <string name="robertos">Robertos Taco Shop</string>
+    <string name="rio">Cafe Rio</string>
+    <string name="tacobell">Taco Bell</string>
+    <string name="polloloco">El Pollo Loco</string>
+    <string name="deltaco">Del Taco</string>
+    <string name="olivegarden">Olive Garden</string>
+    <string name="pizzahut">Pizza Hutt</string>
+    <string name="dominos">Dominos</string>
+    <string name="papajohns">Papa Johns</string>
+</resources>

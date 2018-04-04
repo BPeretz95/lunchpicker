@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="asian">
+        <item>@string/thai1</item>
+        <item>@string/madness</item>
+        <item>@string/sushi</item>
+        <item>@string/pandas</item>
+        <item>@string/rossj</item>
+        <item>@string/ramen</item>
+        <item>@string/chinese</item>
+
+    </string-array>
+
+    <string-array
+        name="american">
+        <item>@string/chickenshack</item>
+        <item>@string/innout</item>
+        <item>@string/blackbeardiner</item>
+        <item>@string/bbq</item>
+        <item>@string/marie</item>
+        <item>@string/redrobin</item>
+        <item>@string/jimmy</item>
+        <item>@string/capriotis</item>
+
+    </string-array>
+
+    <string-array
+        name="mexican">
+        <item>@string/robertos</item>
+        <item>@string/rio</item>
+        <item>@string/tacobell</item>
+        <item>@string/polloloco</item>
+        <item>@string/deltaco</item>
+    </string-array>
+
+    <string-array
+        name="italian">
+        <item>@string/olivegarden</item>
+        <item>@string/pizzahut</item>
+        <item>@string/dominos</item>
+        <item>@string/papajohns</item>
+    </string-array>
+</resources>
