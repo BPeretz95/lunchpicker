@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void addListenerOnButton() {
 
-        ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
+        ImageButton imageButton1 = (ImageButton) findViewById(R.id.imageButton1);
 
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        imageButton1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
             {
-         ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
-            imageButton2.setOnClickListener(new View.OnClickListener() {
+         ImageButton imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
+            imageButton3.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View arg0) {
@@ -54,7 +54,35 @@ public class MainActivity extends AppCompatActivity {
                     nameView2.setText(randomAsianName);
                 }
         });
+                {
+                    ImageButton imageButton4 = (ImageButton) findViewById(R.id.imageButton4);
+                    imageButton4.setOnClickListener(new View.OnClickListener() {
 
-    }
+                        @Override
+                        public void onClick(View arg0) {
+                            TextView nameView3 = findViewById(R.id.textView2);
+                            String[] taconames = getResources().getStringArray(R.array.mexican);
+                            int randomIndex = new Random().nextInt(taconames.length);
+                            String randomTacoName = taconames[randomIndex];
+                            nameView3.setText(randomTacoName);
 
-});}}
+
+
+
+                }
+
+    });
+                    {
+                        ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
+                        imageButton2.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View arg0) {
+                                TextView nameView3 = findViewById(R.id.textView2);
+                                String[] italiannames = getResources().getStringArray(R.array.italian);
+                                int randomIndex = new Random().nextInt(italiannames.length);
+                                String randomItalianName = italiannames[randomIndex];
+                                nameView3.setText(randomItalianName);
+                            }
+                            });}}}});}}
+
