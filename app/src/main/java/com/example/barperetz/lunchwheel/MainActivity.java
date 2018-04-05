@@ -1,9 +1,11 @@
 package com.example.barperetz.lunchwheel;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -30,10 +32,25 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton imageButton1 = (ImageButton) findViewById(R.id.imageButton1);
 
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        imageButton1.setOnClickListener(new OnClickListener() {
+
 
             @Override
             public void onClick(View arg0) {
+
+                Button button = (Button) findViewById(R.id.button);
+                button.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        {
+                            Intent intent = new Intent(MainActivity.this, RestaurantDetail.class);
+                            startActivity(intent);
+                        }
+                    }
+                });
+
+
+
                 TextView nameView1 = findViewById(R.id.textView2);
                 String[] americannames = getResources().getStringArray(R.array.american);
                 int randomIndex = new Random().nextInt(americannames.length);
@@ -43,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
             {
          ImageButton imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
-            imageButton3.setOnClickListener(new View.OnClickListener() {
+            imageButton3.setOnClickListener(new OnClickListener() {
 
                 @Override
                 public void onClick(View arg0) {
@@ -56,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         });
                 {
                     ImageButton imageButton4 = (ImageButton) findViewById(R.id.imageButton4);
-                    imageButton4.setOnClickListener(new View.OnClickListener() {
+                    imageButton4.setOnClickListener(new OnClickListener() {
 
                         @Override
                         public void onClick(View arg0) {
@@ -71,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     });
                     {
                         ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
-                        imageButton2.setOnClickListener(new View.OnClickListener() {
+                        imageButton2.setOnClickListener(new OnClickListener() {
 
                             @Override
                             public void onClick(View arg0) {
@@ -80,6 +97,21 @@ public class MainActivity extends AppCompatActivity {
                                 int randomIndex = new Random().nextInt(italiannames.length);
                                 String randomItalianName = italiannames[randomIndex];
                                 nameView3.setText(randomItalianName);
+
+
                             }
-                            });}}}});}}
+
+
+
+
+
+
+
+                            });}
+
+
+
+
+
+                }}});}}
 
