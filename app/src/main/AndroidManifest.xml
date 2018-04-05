@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".RestaurantDetail"></activity>
-        <activity android:name=".BudgetPicker"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".BudgetPicker">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

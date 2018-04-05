@@ -24,4 +24,7 @@
     <string name="pizzahut">Pizza Hutt</string>
     <string name="dominos">Dominos</string>
     <string name="papajohns">Papa Johns</string>
+    <string name="lunchspecials">Lunch Specials</string>
+    <string name="lowprice">$1-$10</string>
+    <string name="highprice">$11-20</string>
 </resources>

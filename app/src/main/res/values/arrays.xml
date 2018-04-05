@@ -41,4 +41,12 @@
         <item>@string/dominos</item>
         <item>@string/papajohns</item>
     </string-array>
+
+
+    <string-array
+        name="budget">
+        <item>@string/lunchspecials</item>
+        <item>@string/lowprice</item>
+        <item>@string/highprice</item>
+    </string-array>
 </resources>
