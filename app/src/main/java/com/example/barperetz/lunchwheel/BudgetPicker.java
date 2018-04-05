@@ -23,7 +23,7 @@ public class BudgetPicker extends MainActivity {
 
         ListView listView1 = (ListView) findViewById(R.id.listView);
 
-        String[] items = { "$1 - $10", "$11 - 20", "Lunch Specials"};
+        String[] items = { "All", "Fast Food", "Delivery", "Lunch Specials", "Early Lunch"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, items);

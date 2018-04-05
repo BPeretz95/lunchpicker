@@ -1,15 +1,13 @@
 package com.example.barperetz.lunchwheel;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Random;
 
@@ -23,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity2);
 
         addListenerOnButton();
-
-
-
     }
+
+
+
 
     public void addListenerOnButton() {
 
@@ -38,24 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
 
-                Button button = (Button) findViewById(R.id.button);
-                button.setOnClickListener(new OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        {
-                            Intent intent = new Intent(MainActivity.this, RestaurantDetail.class);
-                            startActivity(intent);
-                        }
-                    }
-                });
-
-
 
                 TextView nameView1 = findViewById(R.id.textView2);
                 String[] americannames = getResources().getStringArray(R.array.american);
                 int randomIndex = new Random().nextInt(americannames.length);
                 String randomAmericanName = americannames[randomIndex];
                 nameView1.setText(randomAmericanName);
+
 
             }
             {
@@ -92,11 +79,11 @@ public class MainActivity extends AppCompatActivity {
 
                             @Override
                             public void onClick(View arg0) {
-                                TextView nameView3 = findViewById(R.id.textView2);
+                                TextView nameView4 = findViewById(R.id.textView2);
                                 String[] italiannames = getResources().getStringArray(R.array.italian);
                                 int randomIndex = new Random().nextInt(italiannames.length);
                                 String randomItalianName = italiannames[randomIndex];
-                                nameView3.setText(randomItalianName);
+                                nameView4.setText(randomItalianName);
 
 
                             }
@@ -104,14 +91,24 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+                        });}
+                    {
+                        TextView detailclick = (TextView) findViewById(R.id.textView2);
+                        detailclick.setOnClickListener(new OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent myIntent = new Intent(view.getContext(), RestaurantDetail.class);
+                                startActivityForResult(myIntent, 0);
+                            }
+                        });
 
 
 
-                            });}
 
 
 
+                }}}});}}
 
 
-                }}});}}
+
 
