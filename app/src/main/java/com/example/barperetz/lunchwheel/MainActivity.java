@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -89,15 +90,14 @@ public class MainActivity extends AppCompatActivity {
                             }
 
 
-
-
                         });}
                     {
-                        TextView detailclick = (TextView) findViewById(R.id.textView2);
+                        final TextView detailclick = (TextView) findViewById(R.id.textView2);
                         detailclick.setOnClickListener(new OnClickListener() {
                             @Override
                             public void onClick(View view) {
                                 Intent myIntent = new Intent(view.getContext(), RestaurantDetail.class);
+                                myIntent.putExtra(String.valueOf(R.id.textView2), detailclick.getText().toString());
                                 startActivityForResult(myIntent, 0);
                             }
                         });
