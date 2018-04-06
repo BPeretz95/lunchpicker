@@ -83,9 +83,33 @@
 
 
     <string-array
-        name="earlylunch">
+        name="sitdown">
 
+        <item>@string/rossj</item>
+        <item>@string/olivegarden</item>
+        <item>@string/redrobin</item>
+        <item>@string/thai1</item>
+        <item>@string/ramen</item>
+        <item>@string/blackbeardiner</item>
+        <item>@string/bbq</item>
 
+    </string-array>
+
+    <string-array
+        name="drinks">
+        <item>@string/chickenshack</item>
+        <item>@string/sushi</item>
+
+    </string-array>
+
+    <string-array
+        name="late">
+        <item>@string/sushi</item>
+        <item>@string/Sonic</item>
+        <item>@string/ramen</item>
+        <item>@string/McDonalds</item>
+        <item>@string/innout</item>
+        <item>@string/deltaco</item>
 
 
     </string-array>
