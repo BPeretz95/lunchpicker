@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/plate_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".RestaurantDetail"></activity>
+        <activity android:name=".RestaurantDetail">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:host="example.com" />
+                <data android:scheme="https" />
+            <data android:pathPattern="/.*" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
