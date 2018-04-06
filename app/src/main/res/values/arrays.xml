@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array
-        name="lunchspecials">
 
-
-
-
-    </string-array>
     <string-array
         name="asian">
         <item>@string/thai1</item>
@@ -29,7 +23,12 @@
         <item>@string/redrobin</item>
         <item>@string/jimmy</item>
         <item>@string/capriotis</item>
-
+        <item>@string/Carl</item>
+        <item>@string/Fatburger</item>
+        <item>@string/Freddys</item>
+        <item>@string/Sonic</item>
+        <item>@string/McDonalds</item>
+        <item>@string/Wendys</item>
     </string-array>
 
     <string-array
@@ -39,6 +38,7 @@
         <item>@string/tacobell</item>
         <item>@string/polloloco</item>
         <item>@string/deltaco</item>
+
     </string-array>
 
     <string-array
@@ -56,4 +56,43 @@
         <item>@string/lowprice</item>
         <item>@string/highprice</item>
     </string-array>
+
+    <string-array
+        name="lunchspecials">
+        <item>@string/thai1</item>
+        <item>@string/sushi</item>
+        <item>@string/rossj</item>
+        <item>@string/chinese</item>
+
+
+    </string-array>
+
+    <string-array
+        name="fastfood">
+        <item>@string/deltaco</item>
+        <item>@string/pandas</item>
+        <item>@string/innout</item>
+        <item>@string/Wendys</item>
+        <item>@string/McDonalds</item>
+        <item>@string/Sonic</item>
+        <item>@string/Freddys</item>
+        <item>@string/Fatburger</item>
+        <item>@string/Carl</item>
+
+    </string-array>
+
+
+    <string-array
+        name="earlylunch">
+
+
+
+
+    </string-array>
+
 </resources>
+
+
+
+
+

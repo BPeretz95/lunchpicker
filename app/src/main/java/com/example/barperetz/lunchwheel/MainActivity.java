@@ -91,6 +91,13 @@ public class MainActivity extends AppCompatActivity {
 
 
                         });}
+
+                    {
+                        
+
+
+
+                    }
                     {
                         final TextView detailclick = (TextView) findViewById(R.id.textView2);
                         detailclick.setOnClickListener(new OnClickListener() {

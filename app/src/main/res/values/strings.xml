@@ -9,6 +9,12 @@
     <string name="chinese">China Wan Wan</string>
     <string name="chickenshack">Chicken Shack</string>
     <string name="blackbeardiner">Black Bear Diner</string>
+    <string name="Wendys">Wendys</string>
+    <string name="Carl">Carls Jr</string>
+    <string name="Sonic">Sonic</string>
+    <string name="Fatburger">Fatburger</string>
+    <string name="McDonalds">McDonalds</string>
+    <string name="Freddys">Freddys</string>
     <string name="innout">In n Out</string>
     <string name="bbq">Sin City Smokers</string>
     <string name="marie">Marie Callendars</string>
@@ -27,4 +33,5 @@
     <string name="lunchspecials">Lunch Specials</string>
     <string name="lowprice">$1-$10</string>
     <string name="highprice">$11-20</string>
+
 </resources>
