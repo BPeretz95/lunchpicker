@@ -31,7 +31,40 @@
     <string name="dominos">Dominos</string>
     <string name="papajohns">Papa Johns</string>
     <string name="lunchspecials">Lunch Specials</string>
-    <string name="lowprice">$1-$10</string>
-    <string name="highprice">$11-20</string>
+
+
+
+
+    <string name="thaihours">11AM - 10PM</string>
+    <string name="madnesshours">10AM-10PM</string>
+    <string name="sushihours">11AM - 11PM</string>
+    <string name="pandashours">10AM - 10:30PM</string>
+    <string name="rossjhours">10AM - 8PM</string>
+    <string name="ramenhours">11:30AM - 10PM</string>
+    <string name="chinesehours">11AM - 9:30AM</string>
+    <string name="chickenshackhours">10AM - 9PM</string>
+    <string name="blackbeardinerhours">6AM - 10PM</string>
+    <string name="wendyshours">9AM - 1AM</string>
+    <string name="carlhours">6AM - 10PM</string>
+    <string name="sonichours">6AM - 12AM</string>
+    <string name="fatburgerhours">9AM - 10PM</string>
+    <string name="mcdonaldshours">24Hrs</string>
+    <string name="freddyshours">10:30AM - 10PM</string>
+    <string name="innouthours">10:30AM - 1AM</string>
+    <string name="bbqhours">10AM - 8PM</string>
+    <string name="mariehours">7AM - 10PM</string>
+    <string name="redrobinhours">11AM - 10PM</string>
+    <string name="jimmyhours">11AM - 9PM</string>
+    <string name="capriotishours">10AM - 8PM</string>
+    <string name="robertoshours">24Hrs</string>
+    <string name="riohours">10:30AM - 10PM</string>
+    <string name="tacobellhours">7AM - 2AM</string>
+    <string name="pollolocohours">10AM - 11PM</string>
+    <string name="deltacohours">7AM - 12AM</string>
+    <string name="olivegardenhours">11AM - 10PM</string>
+    <string name="pizzahuthours">10:30AM - 11PM</string>
+    <string name="dominoshours">10AM - 12AM</string>
+    <string name="papajohnshours">10AM - 12AM</string>
+
 
 </resources>

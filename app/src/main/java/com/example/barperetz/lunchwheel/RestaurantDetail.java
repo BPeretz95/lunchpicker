@@ -24,16 +24,35 @@ public class RestaurantDetail extends MainActivity {
         if(bd != null)
         {
             final String restaurant = (String) bd.get(valueOf(R.id.textView2));
+            String hours;
             final TextView textViewDetail = (TextView) findViewById(R.id.textViewDetail);
+            final TextView textViewHours = (TextView) findViewById(R.id.textViewHours);
             textViewDetail.setText(restaurant);
+
+            if(textViewDetail.getText().toString().equals("Teriyaki Madness")) {
+                hours = "10AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Bangkok Orchid")) {
+                hours = "11AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+
+            
+
+
             textViewDetail.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View arg0) {
                     String url = "https://www.google.com/";
 
+
                    if(textViewDetail.getText().toString().equals("Teriyaki Madness")) {
                        url = "http://teriyakimadness.com/menu/";
+
                     }
 
                    if(textViewDetail.getText().toString().equals("Bangkok Orchid")) {

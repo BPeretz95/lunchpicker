@@ -53,8 +53,6 @@
     <string-array
         name="budget">
         <item>@string/lunchspecials</item>
-        <item>@string/lowprice</item>
-        <item>@string/highprice</item>
     </string-array>
 
     <string-array
