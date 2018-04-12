@@ -13,7 +13,9 @@
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="4dp"
-        android:text=""
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="test"
         android:textColor="@color/colorBlack"
         android:textSize="14pt"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,20 +23,54 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.748" />
 
     <TextView
         android:id="@+id/textViewHours"
-        android:layout_width="276dp"
-        android:layout_height="66dp"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text=""
+        android:gravity="left"
+        android:text="test"
         android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetail"
+        app:layout_constraintVertical_bias="0.889" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="140dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Hours:"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetail"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <ImageView
+        android:id="@+id/imageViewRestaurant"
+        android:layout_width="258dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDetail" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/colorGray" />
 
 
 </android.support.constraint.ConstraintLayout>
