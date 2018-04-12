@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addListenerOnButton() {
+        final String title = "Tap restaurant to view details";
+
 
         ImageButton imageButton1 = (ImageButton) findViewById(R.id.imageButton1);
 
@@ -32,12 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View arg0) {
+                TextView titleView = findViewById(R.id.textView3);
 
                 TextView nameView1 = findViewById(R.id.textView2);
                 String[] americannames = getResources().getStringArray(R.array.american);
                 int randomIndex = new Random().nextInt(americannames.length);
                 String randomAmericanName = americannames[randomIndex];
                 nameView1.setText(randomAmericanName);
+                titleView.setText(title);
 
             }
             {
@@ -47,10 +51,12 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View arg0) {
                     TextView nameView2 = findViewById(R.id.textView2);
+                    TextView titleView = findViewById(R.id.textView3);
                     String[] asiannames = getResources().getStringArray(R.array.asian);
                     int randomIndex = new Random().nextInt(asiannames.length);
                     String randomAsianName = asiannames[randomIndex];
                     nameView2.setText(randomAsianName);
+                    titleView.setText(title);
                 }
         });
                 {
@@ -59,11 +65,13 @@ public class MainActivity extends AppCompatActivity {
 
                         @Override
                         public void onClick(View arg0) {
+                            TextView titleView = findViewById(R.id.textView3);
                             TextView nameView3 = findViewById(R.id.textView2);
                             String[] taconames = getResources().getStringArray(R.array.mexican);
                             int randomIndex = new Random().nextInt(taconames.length);
                             String randomTacoName = taconames[randomIndex];
                             nameView3.setText(randomTacoName);
+                            titleView.setText(title);
 
                 }
 
@@ -74,11 +82,13 @@ public class MainActivity extends AppCompatActivity {
 
                             @Override
                             public void onClick(View arg0) {
+                                TextView titleView = findViewById(R.id.textView3);
                                 TextView nameView4 = findViewById(R.id.textView2);
                                 String[] italiannames = getResources().getStringArray(R.array.italian);
                                 int randomIndex = new Random().nextInt(italiannames.length);
                                 String randomItalianName = italiannames[randomIndex];
                                 nameView4.setText(randomItalianName);
+                                titleView.setText(title);
 
                             }
 
@@ -91,10 +101,12 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                             TextView nameView5 = findViewById(R.id.textView2);
+                            TextView titleView = findViewById(R.id.textView3);
                             String [] fastfoodnames = getResources().getStringArray(R.array.fastfood);
                             int randomIndex = new Random().nextInt(fastfoodnames.length);
                             String randomFastName = fastfoodnames[randomIndex];
                             nameView5.setText(randomFastName);
+                            titleView.setText(title);
                         }
 
                         {
@@ -102,11 +114,13 @@ public class MainActivity extends AppCompatActivity {
                      imageButton6.setOnClickListener(new OnClickListener() {
                          @Override
                          public void onClick(View view) {
+                             TextView titleView = findViewById(R.id.textView3);
                              TextView nameView6 = findViewById(R.id.textView2);
                              String [] sitdownnames = getResources().getStringArray(R.array.sitdown);
                              int randomIndex = new Random().nextInt(sitdownnames.length);
                              String randomSitNames = sitdownnames[randomIndex];
                              nameView6.setText(randomSitNames);
+                             titleView.setText(title);
                          }
 
                          {
@@ -115,10 +129,12 @@ public class MainActivity extends AppCompatActivity {
                           @Override
                           public void onClick(View view) {
                               TextView nameView7 = findViewById(R.id.textView2);
+                              TextView titleView = findViewById(R.id.textView3);
                               String [] drinknames = getResources().getStringArray(R.array.drinks);
                               int randomIndex = new Random().nextInt(drinknames.length);
                               String randomDrinkNames = drinknames[randomIndex];
                               nameView7.setText(randomDrinkNames);
+                              titleView.setText(title);
                           }
 
                           {
@@ -127,10 +143,12 @@ public class MainActivity extends AppCompatActivity {
                            @Override
                            public void onClick(View view) {
                                TextView nameView8 = findViewById(R.id.textView2);
+                               TextView titleView = findViewById(R.id.textView3);
                                String [] latenames = getResources().getStringArray(R.array.late);
                                int randomIndex = new Random().nextInt(latenames.length);
                                String randomLateNames = latenames[randomIndex];
                                nameView8.setText(randomLateNames);
+                               titleView.setText(title);
                            }
                        });
 
