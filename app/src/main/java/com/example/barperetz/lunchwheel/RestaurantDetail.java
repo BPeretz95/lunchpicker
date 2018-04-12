@@ -44,8 +44,143 @@ public class RestaurantDetail extends MainActivity {
                 textViewHours.setText(hours);
 
             }
+            if(textViewDetail.getText().toString().equals("Panda Express")) {
+                hours = "10AM - 10:30PM";
+                textViewHours.setText(hours);
 
-            
+            }
+            if(textViewDetail.getText().toString().equals("Ross J Aloha Grill")) {
+                hours = "10AM - 8PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Fukumimi Ramen")) {
+                hours = "11:30AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("China Wan Wan")) {
+                hours = "11AM - 9:30PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Chicken Shack")) {
+                hours = "10AM - 9PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Black Bear Diner")) {
+                hours = "6AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Wendys")) {
+                hours = "9AM - 1AM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Carls Jr")) {
+                hours = "6AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Sonic")) {
+                hours = "6AM - 12AM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Fatburger")) {
+                hours = "9AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("McDonalds")) {
+                hours = "24Hrs";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Freddys")) {
+                hours = "10:30AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("In n Out")) {
+                hours = "10:30AM - 1AM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Sin City Smokers")) {
+                hours = "10AM - 8PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Marie Callendars")) {
+                hours = "7AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Red Robin")) {
+                hours = "11AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Jimmy Johns")) {
+                hours = "11AM - 9PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Cappriottis")) {
+                hours = "10AM - 8PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Robertos Taco Shop")) {
+                hours = "24Hrs";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Cafe Rio")) {
+                hours = "10:30AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Taco Bell")) {
+                hours = "7AM - 2AM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("El Pollo Loco")) {
+                hours = "10AM - 11PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Del Taco")) {
+                hours = "7AM - 12AM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Olive Garden")) {
+                hours = "11AM - 10PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Pizza Hutt")) {
+                hours = "10:30AM - 11PM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Dominos")) {
+                hours = "10AM - 12AM";
+                textViewHours.setText(hours);
+
+            }
+            if(textViewDetail.getText().toString().equals("Papa Johns")) {
+                hours = "10AM - 12AM";
+                textViewHours.setText(hours);
+
+            }
+
+
 
 
             textViewDetail.setOnClickListener(new View.OnClickListener() {
@@ -91,9 +226,9 @@ public class RestaurantDetail extends MainActivity {
                    }
 
                    if(textViewDetail.getText().toString().equals("Chicken Shack")) {
-                       url = "https://mychickenshack.com/";
+                        url = "https://mychickenshack.com/";
 
-                   }
+                    }
 
                    if(textViewDetail.getText().toString().equals("Black Bear Diner")) {
                        url = "https://blackbeardiner.com/menus/";
