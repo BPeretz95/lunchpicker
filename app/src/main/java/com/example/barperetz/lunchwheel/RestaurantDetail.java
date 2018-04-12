@@ -39,6 +39,11 @@ public class RestaurantDetail extends MainActivity {
                 textViewHours.setText(hours);
 
             }
+            if(textViewDetail.getText().toString().equals("Blue Fin Sushi")) {
+                hours = "11AM - 11PM";
+                textViewHours.setText(hours);
+
+            }
 
             
 
