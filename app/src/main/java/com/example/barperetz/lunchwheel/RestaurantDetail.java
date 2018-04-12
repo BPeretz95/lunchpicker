@@ -6,9 +6,12 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static java.lang.String.valueOf;
 
@@ -29,6 +32,7 @@ public class RestaurantDetail extends MainActivity {
             String hours;
             String contact;
             final TextView textViewContact = (TextView) findViewById(R.id.textViewContact);
+            final Button button2 = (Button) findViewById(R.id.button2);
             final TextView textViewDetail = (TextView) findViewById(R.id.textViewDetail);
             final TextView textViewHours = (TextView) findViewById(R.id.textViewHours);
             ImageView imageViewRestaurant = (ImageView) findViewById(R.id.imageViewRestaurant);
@@ -275,7 +279,7 @@ public class RestaurantDetail extends MainActivity {
             }
 
 
-            textViewDetail.setOnClickListener(new View.OnClickListener() {
+            button2.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View arg0) {
@@ -431,6 +435,7 @@ public class RestaurantDetail extends MainActivity {
 
                     }
 
+
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);
@@ -440,6 +445,9 @@ public class RestaurantDetail extends MainActivity {
             });
 
             textViewContact.setOnClickListener(new View.OnClickListener() {
+                public static final int REQUEST_PHONE_CALL = 0;
+
+
                 @Override
                 public void onClick(View view) {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
@@ -452,6 +460,11 @@ public class RestaurantDetail extends MainActivity {
                         //                                          int[] grantResults)
                         // to handle the case where the user grants the permission. See the documentation
                         // for ActivityCompat#requestPermissions for more details.
+
+                        {
+                            ActivityCompat.requestPermissions(RestaurantDetail.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
+                        }
+
 
                         return;
                     }
