@@ -1,5 +1,9 @@
 <resources>
+
+
     <string name="app_name">Lunch Picker</string>
+    <string name="welcome_title">Welcome to the Lunch Picker!</string>
+    <string name="app_description">Tap the picture above to begin choosing random restaurants</string>
 
 
 
